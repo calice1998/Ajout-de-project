@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Maps</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+</head>
+<body>
+    <div id="app">
+        <div class="container flex">
+            <div class="search-bar absolute flex aic gap-10">
+                <i class="fas fa-bars" id="bars"></i>
+                <input type="search" class="flex-1" placeholder="Rechercher sur station Maps">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="search-bar-suggestion absolute none">
+                    <!-- <div class="suggestion-item">Suggestion 1</div>
+                    <div class="suggestion-item">Suggestion 2</div>
+                    <div class="suggestion-item">Suggestion 3</div>
+                    <div class="suggestion-item">Suggestion 4</div>
+                    <div class="suggestion-item">Suggestion 5</div>
+                    <div class="suggestion-item">Suggestion 6</div> -->
+                </div>
+               
+            </div>
+            <nav id="menu" class="flex-1 none">
+
+                <div class="station-cover">
+                    <img src="/assets/images/stations/stations-cover.png" width="100%">
+                </div>
+                <div class="station-title">
+                   <h2> Bienvenue sur Station Maps</h2>
+                </div>
+                <div class="about-station">
+                    <p>
+                        <strong>Station</strong> vous aide à retrouver toures les 
+                        informations sur toutes stations carburants en france. 
+                    </p>
+                    <p>
+                        <strong>Cliquez sur la station de votre choix</strong> 
+                        pour faire apparaitre son nom, son adresse et 
+                        les services disponibles.
+                        <br><strong>A savoir:</strong> ces informations 
+                        sont mises à jour toutes les 5minutes.
+                    </p>
+                    <p>
+                       Avec <strong>Station Maps</strong>, bénéficier d'une 
+                       information en temps réel.
+                    </p>
+                </div>
+                
+            </nav>
+            <div class="map carte flex-3" id="map"></div>
+        </div>
+    </div>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <script src="/assets/js/functions/listeners.js"></script>
+    <script src="/assets/js/api/station.js"></script>
+    <script src="/assets/js/main.Js"></script>
+</body>
+<br>
+</html>

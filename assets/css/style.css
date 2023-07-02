@@ -1,0 +1,156 @@
+:root{
+    --main-color: #1A73F8;
+    --main-color-orange: orange;
+    --main-color-white: white;
+    --main-color-like-white: #efefef;
+    --main-color-like-gray: #ccc;
+}
+
+
+/********************************* CONTAINER ********************************/
+
+.container{
+    height: 100vh;  
+}
+
+/********************************* NAV ********************************/
+
+nav{
+    min-width: 620px;
+    height: 100vh;
+    overflow: auto;
+}
+nav h2{
+    margin-left: 10px;
+}
+nav .station-cover img{
+    height: 400px;
+}
+
+/********************************* MENU ********************************/
+.about-station{
+    padding: 10px;
+}
+.about-station strong{
+    color: var(--main-color);
+}
+.about-station p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    line-height: 1.9;
+    border-bottom: 0.1px solid var(--main-color-like-gray);
+    font-style: italic;
+}
+ /********************************* SEARCH BAR ********************************/
+
+ .search-bar{
+    left: 55px;
+    top: 10px;
+    background-color: var(--main-color-white);
+    padding: 15px 30px;
+    width: 450px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 2px 8px 12px rgb(0 0 0/20%);
+    z-index: 99999;
+ }
+ .search-bar input{
+    height: 35px;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+ }
+ .search-bar i{
+    color: var(--main-color-like-gray);
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+/********************************* DETAILS STATION ********************************/
+
+.station-reviews{
+    font-size: 1.4rem;
+    border-bottom: 0.1px solid var(--main-color-like-gray);
+    padding-bottom: 15px;
+
+}
+.station-reviews .reviews-resume{
+   color: var(--main-color);
+}
+.fa-star{
+    color: var(--main-color-orange);
+}
+.station-action-item i{
+    font-size: 1.4rem;
+    color: var(--main-color-white);
+    background-color: var(--main-color);
+    padding: 15px;
+    display: block;
+    border-radius: 50px;
+    width: 20px;
+}
+.station-actions{
+    border-bottom: 0.1px solid var(--main-color-like-gray);
+}
+.station-description{
+    font-size: 1.4rem;
+}
+.station-services li{
+    padding: 10px 0;
+}
+.station-service:hover{
+    font-weight: bold;
+    background-color: var(--main-color-like-white);
+    cursor: pointer;
+}
+.station-service img{
+    height: 40px;
+     width: 40px;
+}
+.station-service {
+    padding: 10px 0;
+}
+/********************************* MARKER POPUP********************************/
+.station-popup{
+    margin: 8px;
+    font-size: 1.1rem;
+    width: 350px !important;
+}
+.leaflet-popup-content {
+    margin: 0;
+}
+.leaflet-popup-content-wrapper{
+    width: 400px;
+    margin: 0;
+}
+.station-popup button{
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+    font-weight: bold;
+    height: 40px;
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+/********************************* SEARCH BAR SUGGESTION ********************************/
+.search-bar-suggestion{
+    background-color: var(--main-color-white);
+    top: 65px ;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 8px 12px rgb(0 0 0/20%);
+}
+.search-bar-suggestion .suggestion-item{
+    padding: 5px 15px;
+    line-height: 1.9;
+    border-bottom: 0.1px solid var(--main-color-like-gray);
+    cursor: pointer;
+}
+.search-bar-suggestion .suggestion-item:hover{
+    background-color: var(--main-color-like-white);
+}
+/********************************* SEARCH BAR ********************************/
